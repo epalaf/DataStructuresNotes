@@ -1,0 +1,32 @@
+Quick Sort is a best case O(logn)
+Quick Sort is a Recursive Sort
+
+Quick Sort uses a Divide and Conq technique, much like a Binary Search
+
+Binary Search, as a Reminder, partitions the data into a left and right
+The Binary Search partitions until the partition contains only one element, or is null
+
+Structural Partition: will partition the left side first, going all the way to the 
+basecase.Once the Left side Partition is popped off, the sort will then
+do the same for the Right side Partition.
+
+Rec(LSide);
+Rec(RSide);
+
+This way of partitioning is known as a Structural Partition
+Merge Sort utilizes a Structural Partition
+
+Quick Sort Partitions using values that are less then or greater then the pivot value
+The Pivot Value is not the same as the midpoint value
+Quick SOrt uses Value/Static Partitioning
+
+Quick Sort sorts in place, meaning memory allocation is O(1)
+Merge Sort uses more memory then Quick Sort, O(n)
+
+Merge Sort Worst Case: O(nlogn)
+Quick Sort worst Case: O(n^2)
+
+Arrays are good for Cache, Hardware controls the Cache
+Quick Sort works well with Arrays
+
+Quick Sort 

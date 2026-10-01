@@ -1,0 +1,26 @@
+Recursion works well on certain types of data structures, when it comes to hierarchical
+structures
+
+Recursion can be used in some sort methods, such as a merge sort
+
+A Merge Sort consists of a Merge and a Binary Search
+
+Recursion is easier to implement on Graphs and Trees
+
+The Two basic operations of Recursion includes push and pop
+
+Stacks can be used to reverse/backtrack, by changing the order of the recursive call
+
+Code that happens before the call, occur as they're pushed (top to basecase)
+Code that happens after the call, occur after the return (basecase to top)
+
+Selection sort involves searching through an array to find the smallest element
+in the array, before swapping the position of the current index and the smallest value
+index
+
+Any use of nested loops results in O(n^2)
+
+Insertion Sort involves taking the value of an unsorted item, and compare it with the 
+sorted side, shifting the unsorted item to the position of the sorted item
+(5, 4, 3, 2, 1) -> 5 is Sorted, and 4 is Unsorted, so they switch positions
+(4, 5, 3, 2, 1) -> 

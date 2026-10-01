@@ -1,0 +1,22 @@
+Array Objects do not create individual objects objects, only one object
+that holds references to other objects
+
+Recursion takes up an inefficient amount of memory in most cases
+A Stack Data Structure has a push section (writing onto the stack) 
+and a pop section (removal from stack)
+
+Iteration is preferable to a Recursive Structure when on a Linear Time Scale
+Recursion works when there's a repeated pattern within a system
+
+The Push Section Builds the Stack, once the Recursion ends at the Basecase
+The Pop Section Removes the function calls from the Stack, returning the final value
+
+At every section of the Stack is a Program State, Recursion utilizes these Program States
+to save local variable states, before popping them off the Stack
+
+when it comes to big(O), Iteration is more Memory Efficient then Recursion
+Since Iteration's Stack Space is only one Stackframe,
+Meanwhile Recursion's Stack Space is O(n) Stackframes.
+
+There's the possibility of running out of Stack Space when using Recursion
+if the data set is too large
