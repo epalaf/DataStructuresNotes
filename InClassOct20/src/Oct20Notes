@@ -1,0 +1,33 @@
+Linked Lists are the foundation of many Data Structures. 
+
+Stack and Queue: Implements a Stack or Queue using either an Array
+or Linked List 
+Array Back: Worries about size
+List Back: Does not have to worry about size
+
+Nodes have values, but the structure is actually maintained by pointers 
+and references to other nodes
+
+Ex: node(100). node(200), and node (300) are all apart of a linked list
+100 has to point to 200, and 200 has to point to 300
+To search through the list, we need a HEAD pointer to point to 100
+This is called a single Link List, because we can only go one way through
+the Link List. 
+
+The Advantage of inserting with a Linked List as opposed to an Array, is
+that LL only needs to point to the insert, and the insert point to the
+next node. With an array, you would need to shift all array values, due
+to it being a contiguous data structure within Random Access Memory. 
+Linked List are Sequential Access since they are not contiguous
+
+You have to maintain the HEAD Pointer, or else you'll lose the List
+
+The TAIL Pointer, will point to the end of the list
+you can use the TAIL Pointer to insert a Node at the end of a List
+(Make sure to always update TAIL after each append)
+
+Append(insert)- WC: O(n) BC: O(1)
+Traversal(search)- WC: O(n)
+Deletion- WC: O(n) BC: O(1) 
+
+

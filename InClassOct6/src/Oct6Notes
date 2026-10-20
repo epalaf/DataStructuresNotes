@@ -1,0 +1,7 @@
+Quick Sort: Bestcase- O(nlogn); Worstcase- O(n^2); Memory- O(1); Stability- Unstable
+Merge Sort: Bestcase- O(nlogn); Worstcase- O(nlogn); Memory- O(n); Stability- Stable
+
+Certain sorts work on different types of data structures
+Merge Sort do not have to worry about memory space when working with Linked Lists
+
+1. 

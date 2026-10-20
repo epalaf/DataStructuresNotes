@@ -1,0 +1,25 @@
+class object = new object
+
+int[] array = {10. 20. 30};
+
+Direct Access (ArrayBack):
+Stack will reference the memory address of the array, and use base offset calculations within the Heap to retrieve 
+the elements within the array from memory contiguously
+
+LinkedList (ListBack): When a List is created, [10] [20] [30] are Nodes, they are not contiguous within memory
+Nodes contain a reference address to the next node, linking them together. The final node will have
+a NULL address, signifying the end of the List. 
+The first Node of the List is called the Head, starting from the head you can navigate through the list using Pointers
+Arrays have to allocate memory ahead of time, while Linked List only allocate the space they need, meaning Nodes can be added
+without needing to shift memory addresses.
+Pointers allow for nodes to be inserted or deleted without shifting all nodes
+
+Drawbacks: There is no Direct Access to a Node, you have to search through the List from start to destination
+Worst Case Scenario O(n).
+You must maintain your Head Pointer, or else you'll lose access to the list. 
+Basic LinkedLists can only read forward, since Nodes have no pointer to the Nodes before them
+
+LinkedList will have multiple Objects on the Stack referring to the same Address, but no matter what, you must maintain
+the head address, or the list will be taken up by garbage collection
+
+List uses more memory then Arrays, due to the memory size of the Pointers

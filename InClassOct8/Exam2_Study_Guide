@@ -1,0 +1,25 @@
+Time Complexity vs Space Complexity: Measuring Execution time vs. 
+additional memory usage as input size (n) grows
+
+Asymptotic Growth Rates: O(1) Constant Time, O(logn) Logarithmic Time
+O(n) Linear Time, O(nlogn) Linearithmic time (Mergesort, Quicksort)
+O(n^2) Quadratic time (bubble sort, etc)
+
+Best, Average, and Worst-Case Analysis: Big-O- Upper Bound (worst case)
+Big-Omega- Lower bound (best case)
+Counting Operations: Dropping constants and keeping dominating terms
+(Higher Order Variables)
+
+Array Core Operation: Access/Read- BC O(1), WC O(1), Complexity O(1)
+Update- BC O(1), O(1), Complexity O(1)
+Linear Search- BC O(1), WC O(n), Complexity O(1)
+
+Recursion vs Iteration: Trade-offs between readability/elegance and 
+memory overhead (stack frame allocation)
+
+Sorting Algorithms: BubbleSort- BC O(n), WC O(n^2) Complexity O(1)
+SelectionSort- BC O(n^2), WC O(n^2), Complexity O(1)
+InsertionSort- BC O(n), WC O(n^2), Complexity O(1)
+MergeSort- BC O(nlogn), WC O(nlogn), Complexity O(n)
+QuickSort- BC O(nlogn), WC O(N^2), Complexity O(logn)(stack)
+
