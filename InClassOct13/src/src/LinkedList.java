@@ -11,10 +11,10 @@ public class LinkedList {
 	
 	public void Show() {
 		Node curNode = this.HEAD;
-		Node tail = this.TAIL;
+		//Node tail = this.TAIL;
 		while(curNode != null) {
 			System.out.printf("----%s-----\n", curNode.toString());
-			System.out.printf("Value: %d - Next: %h - Tail: %h\n", curNode.value, curNode.next, tail.value);
+			System.out.printf("Value: %d - Next: %h\n", curNode.value, curNode.next);
 			curNode=curNode.next;
 		}
 	}
@@ -35,7 +35,7 @@ public class LinkedList {
 		}
 		//this.TAIL = newNode;
 	}
-	public void AppendWithTail(int value) {
+	public void AppendWithTail(int value) { //Deborah designed this
 		Node newNode = new Node(value);
 		Node TailNode = this.TAIL;
 		
@@ -49,26 +49,56 @@ public class LinkedList {
 		}
 	}
 	
-/*	public Node Search (int value) { //always return currNode
+	public Node Search (int value) { //always return currNode
 		Node curNode = this.HEAD;
 		
+		while(curNode.value != value && curNode.next != null) {
+			curNode  = curNode.next;
+		}
 		
-	} */
+		return curNode;
+		
+		
+	} 
 	
-	/*public Node Delete (int value) {
+	public Node Delete (int value) { 
+		Node curNode = this.HEAD;
+		Node BackUp = this.HEAD;
+		while(curNode.value != value && curNode.next != null) {
+			BackUp = curNode;
+			curNode  = curNode.next;
+		}
+		if (curNode.value == this.TAIL.value) {
+			this.TAIL = BackUp;
+			BackUp.next = null;
+		}
+		else {
+			BackUp.next = curNode.next;
+		}
 		
-	} */
+		
+		
+		return curNode;
+	} 
 
 	
 	public static void main(String[] args) {
 		LinkedList list = new LinkedList();
+		Node test = new Node();
 		
 		list.Append(10);
-		list.Show();
+		//list.Show();
 		list.Append(20);
 		list.Append(30);
 		list.AppendWithTail(40);
 		list.Show();
+		test = list.Search(40);
+		
+		System.out.println("Your target Node will be '" + test + "' won't it?");
+		test = list.Delete(40);
+		System.out.println(test + " Has been deleted");
+		list.Show();
+		
 	}
 
 }
