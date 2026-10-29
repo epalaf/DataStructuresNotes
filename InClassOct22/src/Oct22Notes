@@ -1,0 +1,24 @@
+Stack: (Array, Linked) LIFO (Last In First Out)
+Push(), Pop(), Peak() are three basic commands for Stack
+Push() will insert a value into a stack, before adjusting the stack
+pointer
+Pop() will remove a stack, deleting it's contents and making it empty
+
+Stacks will be Pop() in reverse order, ascending from stack layers
+
+Push() will always start from the head of a Linked List
+
+
+Queue: (Array, Linked) FIFO (First In First Out)
+
+DeQueue: Removing a value from queue
+
+EnQueue: Appending value to queue
+
+Double Linked List: Stack and Queue have a limited base of operations
+A Double Linked List has another reference pointer that allows the Linked List to be
+back tracked through
+
+Double Linked List will be foundational for the Tree Data Structure, which
+will traverse using two reference pointers as well (left and right)
+

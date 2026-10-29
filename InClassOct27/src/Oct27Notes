@@ -1,0 +1,13 @@
+Double Linked List are not always needed, they're unnecessary for a stack
+and queue structure, but they are vital for binary search trees. 
+
+Nodes can be arranged into different ways to form different data
+structures. 
+
+With a double linked list, nodes are connected forwards and backwards
+Binary Search Trees are connected left and right descending to build
+the structure. 
+
+A Stack can be used to evaluate an Arithmetic Expression if formatted properly
+
+RandomFileIO is similar to manipulating an Array

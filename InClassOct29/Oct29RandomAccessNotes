@@ -1,0 +1,29 @@
+Buffered Reader and Scanner both use Sequential Access, meaning they go through from
+start to finish, line by line within the memory
+
+Cache is used for temporary storage to prevent data from being moved over a long distance
+Cache is a hardware limitation, not a software limitation
+
+Disk is a lot slower to run than Memory
+
+Sequential Access requires reading through and writing out an entire piece of data
+
+Random Access uses a hard disk to treat data like an array and using base offset calculation 
+to locate the specified portion
+
+Delimiters will not be necessary for Random Access
+
+For Random Access you need to designate a set limit for data storage when making records
+
+int userID - 4 bytes
+String username - 15 bytes
+String passwd - 20 bytes
+
+Record Length - 4 + (15 + 20) * 2 = 74 bytes
+
+In this example, the offset will be the base times the Record Length
+The File Pointer will use this to find one particular record  within the memory
+
+if you wanted to sort through a Random Access File by name, you'd need an Index File that would provide the name
+and the offset value with that name's record, in order for you to do a search utilizing the index File to find the Name's record
+to access and read
