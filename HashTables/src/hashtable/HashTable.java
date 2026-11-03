@@ -40,6 +40,7 @@ public class HashTable {
 		int hashkey = hashkey(key);
 		Node node = new Node(key, value);
 		this.table[hashkey] = node;
+		this.size++;
 		
 		
 	}
