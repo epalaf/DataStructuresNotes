@@ -31,9 +31,15 @@ public class HashTable {
 		
 		//Always need to modulus the hash with array's size to make sure the index is
 		//within the range of the backing array
-		int index = key.length() % this.capacity;
+		int index;
+		int total = 0;
 		
-		return index;
+		for (index = 0; index < key.length(); index++) {
+			total = total + (int) key.charAt(index) * 13;
+		}
+		int indexCalc = total % this.capacity;
+		
+		return indexCalc;
 	}
 	
 	public void put(String key, String value) {
