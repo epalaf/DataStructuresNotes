@@ -37,3 +37,34 @@ Keys				Root (25)
 18		
 
 Lesser Values are placed to the Left, Greater Values are placed to the Right
+
+In Depth-First Searches, a Stack will be used to traverse back up a Tree from the Bottom
+
+Traversal
+In-Order - Left -> Current -> Right (5) -> (10) -> (17)
+Pre-Order - Current -> Left -> Right (10) -> (5) -> (17)
+Post-Order - Left -> Right -> Current (5) -> (17) -> (10)
+
+		-In-Order Stack Traversal-
+Stack	Print
+25
+10
+5		Pop 5
+		Pop 10	
+17		Pop 17
+18		Pop 18
+		Pop 25
+30		Pop 30
+
+-In-Order Method Code Desc.
+Print Node(Current)
+Pre-Order(Left)
+Pre-Order(Right)
+
+In-Order Method Code Asc.
+Pre-Order(Left)
+Pre-Order(Right)
+Print Current
+
+-Pre-Order Stack-
+25 10 5 17 18 30		Used to Clone a Tree
