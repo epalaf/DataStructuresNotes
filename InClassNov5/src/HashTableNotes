@@ -1,0 +1,42 @@
+Hash Tables have a Worst Case of O(n), and a Best Case of O(1)
+
+Collisions within a Hash Table are what lead to a worst case
+
+Hash Tables need a good Hash Function in order to ensure little to no Collisions
+of Key values
+
+Hash Tables use Key-Value Pairing
+The key will be put through a hash function, in order to produce an index 
+where the value will be stored (the more optimized a Hash Function, the less clustering
+of indexes, which will decrease the chance of collision)
+
+The Hash Function will always require Modulus by the size of the Hash Table
+
+Collision and The Load Factor are what determine the performance of a Hash Table
+
+Hash Tables have two main functions
+put(key, value)
+get(value)
+
+Open Addressing (Linear Probe))- Resizing 
+If the Load Factor is over 0.75, you need to resize and 
+double the capacity to reduce the Load Factor
+After resizing, you need to re-hash the Key, and if there is collision, you will take a
+colliding hash value and place it in an empty Index of the array
+until there's no more collision
+Requires you store the Key alongside the Value, since all colliding entries share
+the same Hash Index Value
+
+
+Separate Chaining - Hash Table should never be full
+Treats every index in the array as the head of a node. When
+a Collision occurs, all of the Hashes are kept in the same Linked List
+The key will be used to differentiate the Hashes in this Linked List
+This Linked List of a Hash Index Value is called a "Bucket"
+
+
+Hash Tables do NOT maintain the order of The Array Values when they were added
+
+
+
+
