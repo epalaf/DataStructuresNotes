@@ -21,5 +21,19 @@ then backtrack to the Root
 
 Trees are Organized into Roots, Leafs, and Sub-Trees
 
-The Height and Depth of Trees: How many levels of Nodes from the Root (Depth) or
+The Height and Depth of Trees: How many levels of Nodes (Depth) or
 the Number of Edges = # of Nodes - 1 (Depth)
+
+A Binary Search Tree only traverses from Right to Left, Descending from
+a Root
+
+				-Incomplete Tree-
+Keys				Root (25)
+25			Node(10)			Node(30)
+10		Node(5)	Node(17)
+17					Node(18)
+30		
+5		
+18		
+
+Lesser Values are placed to the Left, Greater Values are placed to the Right
