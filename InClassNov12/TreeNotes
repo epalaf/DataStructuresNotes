@@ -68,3 +68,5 @@ Print Current
 
 -Pre-Order Stack-
 25 10 5 17 18 30		Used to Clone a Tree
+
+Binary Search- O(logn)
