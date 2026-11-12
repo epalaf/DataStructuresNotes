@@ -1,0 +1,25 @@
+Hash Tables cannot read through Data in an ordered sequence
+Hash Table also require an excessive amount of Empty Space
+
+Binary Search Trees- Data Structure utilizing a Binary Search to find
+and print an ordered sequence of data
+
+Binary Search Trees allow for data to maintain it's order.
+
+Binary Search Trees are a combination of a Binary Search and a Linked List
+
+The first Node of a Binary Tree is referred to as a Root Node
+The Root will always have two Leaf Nodes that act as references
+The structure is Hierarchical rather than linear, so Recursion is essential for
+traversal. 
+
+A Complete Binary Tree: Every Node either has 0 or 2 Sub Nodes
+
+
+Depth-First searches: A means of Traversal of Trees, where you reach the bottom nodes
+then backtrack to the Root
+
+Trees are Organized into Roots, Leafs, and Sub-Trees
+
+The Height and Depth of Trees: How many levels of Nodes from the Root (Depth) or
+the Number of Edges = # of Nodes - 1 (Depth)
