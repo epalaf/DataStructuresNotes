@@ -13,6 +13,8 @@ public class Driver {
 		tree.insert(2);
 		tree.insert(17);
 		
+		System.out.printf("Results: %s\n", tree.search(10));
+		
 		tree.inOrderTraversal(tree.root);
 		System.out.println();
 		tree.preOrderTraversal(tree.root);

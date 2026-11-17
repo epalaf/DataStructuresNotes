@@ -38,3 +38,6 @@ If we want to Delete 5, you would promote the Leaf Node that keeps the hierarchy
 		  3      9   
 		  
 The Deeper the Tree, the more comparisons needed to reach the Leaf Nodes on the bottom
+
+A Binary Search Tree has to maintain it's structure in order to be O(logn), if not, the worst case
+will be O(n)

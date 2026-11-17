@@ -28,17 +28,33 @@ public class BinarySearchTree {
 	}
 	
 	//****** SEARCH ***************************
-	public Node search(int key) {
+	public boolean search(int key) { //Wrapper Function
 		Node node = search(this.root,key);
-		return node;
+		if (node == null) {
+			return false;
+		}
+		return true;
 	}
 	
-	private Node search(Node current, int key){
+	private Node search(Node current, int key){ //Need to fix logic to work with all Tree nodes
+		if(current.key==key) { //Base Case
+			//current = new Node(key);
+			return current;
+		}
+		if(key<current.key) {
+			current.left = search(current.left,key);
+		}else {
+			if(key > current.key) {
+				current.right = insert(current.right,key);	
+			}
+		}
+		
 		return null;
 	}
 	
+	
 	//****** DELETE ***************************
-	public void delete(int key) {
+	public void delete(int key) { //Wrapper Function
 		this.root = delete(this.root,key);
 	}
 	
@@ -48,6 +64,7 @@ public class BinarySearchTree {
 	
 	
 	//****** Find Minimum Key Value ***************************
+	//Needs to be used in Delete Function
 	public int findMin(Node node) {
 		return 0;
 	}
