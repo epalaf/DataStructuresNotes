@@ -1,0 +1,40 @@
+				Tree
+				10
+			5		 15
+		2		8	12	 17
+		
+Traversal:
+In-Order -> L->K->R (2, 5, 8. 10, 12, 15, 17)
+Pre-Order -> K->L->R (10, 5, 2, 8, 15, 12, 17)
+Post-Order -> L->R->K (2, 8, 5,, 12, 17, 15, 10)
+
+If you read using Pre-Order, you can clone the structure of the Tree
+
+Height will be calculated by the Number of Node Hierarchies (The Tree above has a height of 3)
+
+
+				Tree
+				10
+			5		 15
+		2		8	12	 17
+		  3   6  9   
+		  
+If we want to Delete 2, you would promote the Leaf Node: 
+				Tree
+				10
+			5		 15
+		3		8	12	 17
+		     6  9   
+If we want to Delete 5, you would promote the Leaf Node that keeps the hierarchy true: 
+				Tree
+				10
+			3		 15
+		2		8	12	 17
+		     6  9   
+				Tree
+				10
+			6		 15
+		2		8	12	 17
+		  3      9   
+		  
+The Deeper the Tree, the more comparisons needed to reach the Leaf Nodes on the bottom
