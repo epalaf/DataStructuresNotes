@@ -30,26 +30,39 @@ public class BinarySearchTree {
 	//****** SEARCH ***************************
 	public boolean search(int key) { //Wrapper Function
 		Node node = search(this.root,key);
-		if (node == null) {
+		if (node == null) { //if key is false or not
 			return false;
 		}
 		return true;
 	}
 	
+	public boolean checkValue(int nodeKey, int key) {
+		if (nodeKey == key) {
+			return true;
+		}
+		return false;
+	}
+	
 	private Node search(Node current, int key){ //Need to fix logic to work with all Tree nodes
-		if(current.key==key) { //Base Case
+		//Need a variable to hold current value of key
+		if(current == null) { //Base Case 
 			//current = new Node(key);
+			
 			return current;
 		}
-		if(key<current.key) {
-			current.left = search(current.left,key);
+		if(key<current.key) { //Less than key
+			current = current.left;
+			return search(current, key);
+			
 		}else {
-			if(key > current.key) {
-				current.right = insert(current.right,key);	
+			if(key > current.key) { //Greater than key
+				current = current.right;
+				return search(current, key);
+				
 			}
 		}
 		
-		return null;
+		return current; //Returns the value of key
 	}
 	
 	
